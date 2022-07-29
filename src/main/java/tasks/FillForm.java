@@ -31,7 +31,7 @@ public class FillForm implements Task {
 				Enter.theValue("CAMILODUCON@GMAIL.COM").into(EMAIL));
 		actor.attemptsTo(Gender.form("Female"));
 		actor.attemptsTo(Enter.theValue("3213726333").into(PHONE));
-		actor.attemptsTo(SeleccionFecha.deLaInstalacion(btnOpenCalendar, SELECT_MOUNTH, SELECT_YEAR, SELECT_DAY, "1991-February-05"));
+		actor.attemptsTo(SeleccionFecha.deLaInstalacion(btnOpenCalendar, SELECT_MOUNTH, SELECT_YEAR, SELECT_DAY, "1991-February-5"));
 		actor.attemptsTo(Hobbie.form("Reading"));
 		actor.attemptsTo(cargueArchivo.enAdministrador(CARGUE_ARCHIVO, "C:\\Users\\UserQV\\Pictures\\got.jpg"));
 		try {
