@@ -42,7 +42,8 @@ public class Picap extends PageObject{
 	public static final Target HOBBIE = Target.the("HOBBIE")
 			.locatedBy("//div[@id='hobbiesWrapper']//label[@class='custom-control-label']");
 	
-	
+	public static final Target CARGUE_ARCHIVO = Target.the("HOBBIE")
+			.located(By.id("uploadPicture"));
 	
 }
 

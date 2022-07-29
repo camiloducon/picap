@@ -20,9 +20,9 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import interactions.Gender;
 import interactions.Hobbie;
 import interactions.SeleccionFecha;
+import interactions.cargueArchivo;
 
 
-@SuppressWarnings("unused")
 public class FillForm implements Task {
 
 	@Override
@@ -33,6 +33,13 @@ public class FillForm implements Task {
 		actor.attemptsTo(Enter.theValue("3213726333").into(PHONE));
 		actor.attemptsTo(SeleccionFecha.deLaInstalacion(btnOpenCalendar, SELECT_MOUNTH, SELECT_YEAR, SELECT_DAY, "1991-February-05"));
 		actor.attemptsTo(Hobbie.form("Reading"));
+		actor.attemptsTo(cargueArchivo.enAdministrador(CARGUE_ARCHIVO, "C:\\Users\\UserQV\\Pictures\\got.jpg"));
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public static FillForm intoPicap() {
